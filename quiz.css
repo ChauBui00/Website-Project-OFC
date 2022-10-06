@@ -4,10 +4,18 @@ html{
     width: 850px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.html{
+    margin: auto;
+}
 
 body{
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="quiz.html">Quiz</a>
+
 margin: 40px auto;
 background-color: rgb( 255, 233, 231);
+
 }
 
 p {
