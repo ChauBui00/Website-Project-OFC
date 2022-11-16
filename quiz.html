@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="quiz.css" />
+    <script src="main.js"></script>
   </head>
 
   <body>
@@ -17,32 +18,40 @@
 
     <h1>
       The beautiful hair color you wear should complement your skin tone, so
-      take this quiz to discover your ideal shade
+      take this quiz to test your understanding and learn more about your ideal
+      shade.
     </h1>
 
     <hr />
 
-    <p>
-      1. What color veins do you have?
-      <input type="text" />
+    <p class="legend"><b> *Note </b></p>
+
+    <p class="legend1">
+      <b> Type: Cool, Warm, or Neutral for skin tone in the blank_____</b>
     </p>
 
+    <p>
+      You'll be given 1 point for each question. The total score is out 13
+      points, the correct answers will showed up under each question you get
+      wrong.
+    </p>
+
+    <hr />
+    <p>1. What color veins suit best with which skin tone?</p>
+
     <ul>
-      <li>Blue or purple veins = cool skin</li>
-      <li>Green or olive veins = warm</li>
-      <li>Blue or green veins = neutral</li>
+      <li>Blue or purple veins = <input type="text" /> skin tone</li>
+      <li>Green or olive veins = <input type="text" /> skin tone</li>
+      <li>Blue or green veins = <input type="text" /> skin tone</li>
     </ul>
 
     <hr />
 
-    <p>
-      2. Jewelry test : what type of jewelry look best on you?
-      <input type="text" />
-    </p>
+    <p>2. Jewelry test : what type of jewelry look best on you?</p>
 
     <ul>
-      <li>Silver Jewelry = Cool</li>
-      <li>Gold Jewelry = Warm</li>
+      <li>Silver Jewelry = <input type="text" /> skin tone</li>
+      <li>Gold Jewelry = <input type="text" /> skin tone</li>
     </ul>
 
     <hr />
@@ -50,41 +59,34 @@
     <p>
       3. Mirrow test : place a white sheet of paper besides your face, and
       compare it to the mirrow.
-      <input type="text" />
     </p>
 
     <ul>
-      <li>Yellow = Warm</li>
-      <li>Pink/Rosy/Bluish-Red = Cool</li>
-      <li>Both = Neutral</li>
+      <li>Yellow = <input type="text" /> skin tone</li>
+      <li>Pink/Rosy/Bluish-Red = <input type="text" /> skin tone</li>
+      <li>Both = <input type="text" /> skin tone</li>
     </ul>
 
     <hr />
-    <p>
-      4. Sun test : Do you tan easily?
-      <input type="text" />
-    </p>
+    <p>4. Sun test : Do you tan easily?</p>
 
     <ul>
-      <li>Yes, I tan easily = Warm</li>
-      <li>No, I burn and turn red = Cool</li>
+      <li>Yes, I tan easily = <input type="text" /> skin tone</li>
+      <li>No, I burn and turn red = <input type="text" /> skin tone</li>
     </ul>
 
     <hr />
 
-    <p>
-      5. Eye color test: What color is your eyes?
-      <input type="text" />
-    </p>
+    <p>5. Eye color test: What color is your eyes?</p>
 
     <ul>
-      <li>Blue/grey/green/deep brown = Cool</li>
-      <li>Brown/hazel/honey = Warm</li>
+      <li>Blue/grey/green/deep brown = <input type="text" /> skin tone</li>
+      <li>Brown/hazel/honey = <input type="text" /> skin tone</li>
       <li>Neutral : mixture of all kinds = Can be any color.</li>
     </ul>
     <hr />
     <p>
-      <button>Submit</button>
+      <button id="btn">Check result !</button>
     </p>
   </body>
 </html>
