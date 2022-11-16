@@ -1,7 +1,7 @@
 // JavaScript Code
 
-document.getElementById("btn").addEventListener("click", btn);
+document.getElementById("btn").addEventListener("click", btnClicked);
 
-function btn() {
+function btnClicked() {
     
 }

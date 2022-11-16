@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="quiz.css" />
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
   </head>
 
   <body>
@@ -40,9 +40,9 @@
     <p>1. What color veins suit best with which skin tone?</p>
 
     <ul>
-      <li>Blue or purple veins = <input type="text" /> skin tone</li>
-      <li>Green or olive veins = <input type="text" /> skin tone</li>
-      <li>Blue or green veins = <input type="text" /> skin tone</li>
+      <li>Blue or purple veins = <input id="q1.1" type="text" /> skin tone</li>
+      <li>Green or olive veins = <input id="q1.2" type="text" /> skin tone</li>
+      <li>Blue or green veins = <input id="q1.3" type="text" /> skin tone</li>
     </ul>
 
     <hr />
@@ -50,8 +50,8 @@
     <p>2. Jewelry test : what type of jewelry look best on you?</p>
 
     <ul>
-      <li>Silver Jewelry = <input type="text" /> skin tone</li>
-      <li>Gold Jewelry = <input type="text" /> skin tone</li>
+      <li>Silver Jewelry = <input id="q2.1" type="text" /> skin tone</li>
+      <li>Gold Jewelry = <input id="q2.2" type="text" /> skin tone</li>
     </ul>
 
     <hr />
@@ -62,17 +62,19 @@
     </p>
 
     <ul>
-      <li>Yellow = <input type="text" /> skin tone</li>
-      <li>Pink/Rosy/Bluish-Red = <input type="text" /> skin tone</li>
-      <li>Both = <input type="text" /> skin tone</li>
+      <li>Yellow = <input id="q3.1" type="text" /> skin tone</li>
+      <li>Pink/Rosy/Bluish-Red = <input id="q3.2" type="text" /> skin tone</li>
+      <li>Both = <input id="q3.3" type="text" /> skin tone</li>
     </ul>
 
     <hr />
     <p>4. Sun test : Do you tan easily?</p>
 
     <ul>
-      <li>Yes, I tan easily = <input type="text" /> skin tone</li>
-      <li>No, I burn and turn red = <input type="text" /> skin tone</li>
+      <li>Yes, I tan easily = <input id="q4.1" type="text" /> skin tone</li>
+      <li>
+        No, I burn and turn red = <input id="q4.2" type="text" /> skin tone
+      </li>
     </ul>
 
     <hr />
@@ -80,8 +82,10 @@
     <p>5. Eye color test: What color is your eyes?</p>
 
     <ul>
-      <li>Blue/grey/green/deep brown = <input type="text" /> skin tone</li>
-      <li>Brown/hazel/honey = <input type="text" /> skin tone</li>
+      <li>
+        Blue/grey/green/deep brown = <input id="q5.1" type="text" /> skin tone
+      </li>
+      <li>Brown/hazel/honey = <input id="q5.2" type="text" /> skin tone</li>
       <li>Neutral : mixture of all kinds = Can be any color.</li>
     </ul>
     <hr />
