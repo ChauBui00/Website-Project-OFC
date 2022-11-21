@@ -45,6 +45,7 @@ let scoreEl_2 = document.getElementById("score.2");
 let scoreEl_3 = document.getElementById("score.3");
 let scoreEl_4 = document.getElementById("score.4");
 let scoreEl_5 = document.getElementById("score.5");
+let total_score = document.getElementById("total.score");
 
 
 document.getElementById("btn").addEventListener("click", btnClicked);
@@ -73,12 +74,11 @@ function btnClicked() {
 // If statements
         // Que#1If
     if (q1_1Ans === "cool") {
+        scoreEl_1++;
         q1_1SpanEl.style.color = "green";
         q1_1SpanEl.innerHTML = "Correct";
         q1_1SpanEl.style.fontSize = "18.5px";
         q1_1InputEl.style.border = "3px solid green";
-
-
     } else {
         q1_1SpanEl.innerHTML = "Incorrect";
         q1_1SpanEl.style.color = "red";
@@ -87,10 +87,12 @@ function btnClicked() {
      
     
     if (q1_2Ans === "warm") {
+        scoreEl_1++;
         q1_2SpanEl.style.color = "green";
         q1_2SpanEl.innerHTML = "Correct";
         q1_2SpanEl.style.fontSize = "18.5px";
         q1_2InputEl.style.border = "3px solid green";
+
     } else {
         q1_2SpanEl.innerHTML = "Incorrect";
         q1_2SpanEl.style.color = "red";
@@ -98,7 +100,8 @@ function btnClicked() {
     }
 
     
-    if (q1_3Ans === "neutral") {
+    if (q1_3Ans === "neutral") { 
+        scoreEl_1++;
         q1_3SpanEl.style.color = "green";
         q1_3SpanEl.innerHTML = "Correct";
         q1_3SpanEl.style.fontSize = "18.5px";
@@ -109,12 +112,17 @@ function btnClicked() {
         q1_3InputEl.style.border = "3px solid red";
     }
 
+
+
     // Que#2If
     if (q2_1Ans === "cool") {
         q2_1SpanEl.style.color = "green";
         q2_1SpanEl.innerHTML = "Correct";
         q2_1SpanEl.style.fontSize = "18.5px";
         q2_1InputEl.style.border = "3px solid green";
+
+        scoreEl_2++;
+
     } else {
         q2_1SpanEl.innerHTML = "Incorrect";
         q2_1SpanEl.style.color = "red";
@@ -127,6 +135,9 @@ function btnClicked() {
         q2_2SpanEl.innerHTML = "Correct";
         q2_2SpanEl.style.fontSize = "18.5px";
         q2_2InputEl.style.border = "3px solid green";
+
+        scoreEl_2++;
+
     } else {
         q2_2SpanEl.innerHTML = "Incorrect";
         q2_2SpanEl.style.color = "red";
@@ -140,6 +151,9 @@ function btnClicked() {
         q3_1SpanEl.innerHTML = "Correct";
         q3_1SpanEl.style.fontSize = "18.5px";
         q3_1InputEl.style.border = "3px solid green";
+
+        scoreEl_3++;
+
     } else {
         q3_1SpanEl.innerHTML = "Incorrect";
         q3_1SpanEl.style.color = "red";
@@ -152,6 +166,9 @@ function btnClicked() {
         q3_2SpanEl.innerHTML = "Correct";
         q3_2SpanEl.style.fontSize = "18.5px";
         q3_2InputEl.style.border = "3px solid green";
+
+        scoreEl_3++;
+
     } else {
         q3_2SpanEl.innerHTML = "Incorrect";
         q3_2SpanEl.style.color = "red";
@@ -164,6 +181,9 @@ function btnClicked() {
         q3_3SpanEl.innerHTML = "Correct";
         q3_3SpanEl.style.fontSize = "18.5px";
         q3_3InputEl.style.border = "3px solid green";
+
+        scoreEl_3++;
+
     } else {
         q3_3SpanEl.innerHTML = "Incorrect";
         q3_3SpanEl.style.color = "red";
@@ -177,6 +197,9 @@ function btnClicked() {
         q4_1SpanEl.innerHTML = "Correct";
         q4_1SpanEl.style.fontSize = "18.5px";
         q4_1InputEl.style.border = "3px solid green";
+    
+        scoreEl_4++;
+    
     } else {
         q4_1SpanEl.innerHTML = "Incorrect";
         q4_1SpanEl.style.color = "red";
@@ -189,6 +212,9 @@ function btnClicked() {
         q4_2SpanEl.innerHTML = "Correct";
         q4_2SpanEl.style.fontSize = "18.5px";
         q4_2InputEl.style.border = "3px solid green";
+
+        scoreEl_4++;
+
     } else {
         q4_2SpanEl.innerHTML = "Incorrect";
         q4_2SpanEl.style.color = "red";
@@ -201,6 +227,9 @@ function btnClicked() {
         q5_1SpanEl.innerHTML = "Correct";
         q5_1SpanEl.style.fontSize = "18.5px";
         q5_1InputEl.style.border = "3px solid green";
+
+        scoreEl_5++;
+
     } else {
         q5_1SpanEl.innerHTML = "Incorrect";
         q5_1SpanEl.style.color = "red";
@@ -213,10 +242,17 @@ function btnClicked() {
         q5_2SpanEl.innerHTML = "Correct";
         q5_2SpanEl.style.fontSize = "18.5px";
         q5_2InputEl.style.border = "3px solid green";
+
+        scoreEl_5++;
+
     } else {
         q5_2SpanEl.innerHTML = "Incorrect";
         q5_2SpanEl.style.color = "red";
         q5_2InputEl.style.border = "3px solid red";
     }
+
+    let scoreresult = scoreEl_1 + scoreEl_2 + scoreEl_3 +scoreEl_4 + scoreEl_5 ;
+
+    total_score = scoreresult;
 
 }
