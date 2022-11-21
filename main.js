@@ -39,6 +39,13 @@ let q5_1InputEl = document.getElementById("q5.1");
 let q5_2SpanEl = document.getElementById("response_q5.2");
 let q5_2InputEl = document.getElementById("q5.2");
 
+    // Score Elements
+let scoreEl_1 = document.getElementById("score.1");
+let scoreEl_2 = document.getElementById("score.2");
+let scoreEl_3 = document.getElementById("score.3");
+let scoreEl_4 = document.getElementById("score.4");
+let scoreEl_5 = document.getElementById("score.5");
+
 
 document.getElementById("btn").addEventListener("click", btnClicked);
 
@@ -70,6 +77,8 @@ function btnClicked() {
         q1_1SpanEl.innerHTML = "Correct";
         q1_1SpanEl.style.fontSize = "18.5px";
         q1_1InputEl.style.border = "3px solid green";
+
+
     } else {
         q1_1SpanEl.innerHTML = "Incorrect";
         q1_1SpanEl.style.color = "red";
