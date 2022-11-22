@@ -46,6 +46,7 @@ let scoreEl_3 = document.getElementById("score.3");
 let scoreEl_4 = document.getElementById("score.4");
 let scoreEl_5 = document.getElementById("score.5");
 let total_score = document.getElementById("total.score");
+let scorepercentage = document.getElementById("score.percentage");
 
     // Global Variables
 
@@ -258,8 +259,10 @@ function btnClicked() {
         q5_2InputEl.style.border = "3px solid red";
     }
 
-    let scoreresult = (scoreEl_1.innerHTML + scoreEl_2.innerHTML + scoreEl_3.innerHTML + scoreEl_4.innerHTML + scoreEl_5.innerHTML) ;
+    let scoreresult = (score_1 + score_2 + score_3 + score_4 + score_5);
+    scorepercentage = (scoreresult / 13) * 100 ;
 
-    total_score.innerHTML = scoreresult.toFixed(0);
+    total_score.innerHTML = scoreresult, scorepercentage %; 
+
 
 }
