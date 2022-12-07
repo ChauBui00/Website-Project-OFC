@@ -245,5 +245,5 @@ function btnClicked() {
   let percentage = (scoreresult / 13) * 100;
 
   total_score.innerHTML = scoreresult;
-  scorepercentage.innerHTML = percentage;
+  scorepercentage.innerHTML = percentage.toFixed(0);
 }
